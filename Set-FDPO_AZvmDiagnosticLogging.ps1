@@ -3,17 +3,17 @@ param (
     # provide subscription id
     [Parameter(Mandatory=$false)]
     [string]
-    $AZSubscription = "3ea6e547-4e4f-45e3-94d3-267df1ab6e82", # MCAPS subscription
+    $AZSubscription,
 
     # Name of the storage account
     [Parameter(Mandatory=$false)]
     [string]
-    $storageAccount = "monitoringguest231416526",
+    $storageAccount,
 
     # Path to the diagnostics configuration file in json format
     [Parameter(Mandatory=$false)]
     [string]
-    $diagnosticsconfig_path = "C:\Users\nicovan\OneDrive - Microsoft\Github\scripts\Azure\VMDiagnosticsConfig.json"
+    $diagnosticsconfig_path = "VMDiagnosticsConfig.json"
 
 )
 
